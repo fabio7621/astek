@@ -1,0 +1,146 @@
+/* 含oem-odm */
+.page-title-main {
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+.page-title-main-txt {
+  width: 74.479166%;
+  margin: auto;
+}
+.page-title-main-txt h2 {
+  font-size: 70px;
+  color: #70ace5;
+  font-family: "Audiowide", cursive;
+}
+.r-d-top-title {
+  width: 60%;
+  padding-bottom: 50px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.r-d-top-title-txt {
+  width: 50%;
+  margin-bottom: 25px;
+  transform: translateY(50%) translateX(4%);
+}
+.r-d-top-title-txt h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: auto;
+}
+.r-d-top-title-txt span {
+  font-size: 25px;
+}
+.r-d-top-title-list {
+  width: 50%;
+}
+.r-d-top-title-list li {
+  display: flex;
+  align-items: center;
+}
+.listBox {
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.listBox img {
+  width: 100%;
+}
+.r-d-top-title-list li p {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #0e5c82;
+}
+.r-d-main {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 200px;
+}
+.r-d-step {
+  width: 60%;
+  margin: auto;
+}
+.r-d-main img {
+  width: 100%;
+}
+/* oem */
+.odm-oem-main {
+  width: 100%;
+}
+.odm-oem-main-pic {
+  width: 63.645833%;
+  margin: auto;
+  padding-bottom: 13%;
+}
+.odm-oem-main-pic img {
+  width: 100%;
+}
+.r-d-pic-box {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.r-d-pic {
+  width: 49%;
+  margin-bottom: 2%;
+}
+.r-d-pic img {
+  width: 100%;
+}
+
+@media (width<768px) {
+  .page-title-main-txt h2 {
+    font-size: 40px;
+  }
+
+  .page-title-main-txt {
+    width: 87%;
+  }
+  .r-d-top-title {
+    width: 87%;
+  }
+  .r-d-top-title-txt {
+    width: 100%;
+    margin-bottom: 25px;
+    transform: translateY(0%) translateX(0%);
+  }
+  .r-d-top-title-txt h3 {
+    font-size: 35px;
+  }
+  .r-d-top-title-txt span {
+    font-size: 20px;
+  }
+  .r-d-top-title-list {
+    width: 100%;
+  }
+  .r-d-top-title-list li p {
+    font-size: 20px;
+  }
+  .r-d-step {
+    width: 80%;
+  }
+  .page-title-main {
+    margin-bottom: 20%;
+  }
+  /* oem */
+  .odm-oem-main-pic {
+    width: 80%;
+    padding-bottom: 60%;
+  }
+  .r-d-pic-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .r-d-pic {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}

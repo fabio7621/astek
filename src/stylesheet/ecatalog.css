@@ -1,0 +1,38 @@
+.download-list {
+  width: 70%;
+  padding-top: 53px;
+  padding-bottom: 300px;
+}
+.download-list-item {
+  display: flex;
+  padding: 31px 27px 31px;
+  text-decoration: none !important;
+  border-bottom: 2px dashed #aab7c4;
+}
+.download-list-item span,
+.download-list-item p {
+  text-decoration: none;
+  font-size: 20px;
+}
+.download-list-item span {
+  color: #aab7c4;
+  margin-right: 5em;
+}
+.download-list-item p {
+  color: #21578a;
+}
+.download-list-pic {
+  width: 28.25px;
+  margin-left: auto;
+}
+.download-list-pic img {
+  width: 100%;
+  vertical-align: top;
+}
+@media (width<768px) {
+  .download-list {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="astek-health,亞星健康科技" />
+    <meta name="description" content="astek-health,亞星健康科技" />
+    <title>astek-health</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Didact+Gothic&family=Montserrat:wght@400;500;600;700&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BS-CSS    -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/stylesheet/bootstrap.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" />
+    <link rel="stylesheet" href="./src/stylesheet/reset.css" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./src/stylesheet/main.css" />
+    <link rel="stylesheet" href="./src/stylesheet/about.css" />
+    <link rel="stylesheet" href="./src/stylesheet/r&d.css" />
+    <link rel="stylesheet" href="./src/stylesheet/product.css" />
+    <!-- 暫時 -->
+    <link rel="stylesheet" href="./src/stylesheet/product-inner.css" />
+    <!-- owl -->
+    <link rel="stylesheet" href="./src/stylesheet/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/stylesheet/owl.theme.default.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper {
+        width: 100%;
+      }
+      .swiper-wrapper {
+        height: auto;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      .swiper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        width: 100%;
+      }
+
+      .productSwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .productSwiper .swiper-slide {
+        width: 25%;
+        height: 100% !important;
+        opacity: 1;
+      }
+
+      .productSwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next:after,
+      .swiper-rtl .swiper-button-prev:after {
+        content: none !important;
+      }
+      .swiper-button-prev:after,
+      .swiper-rtl .swiper-button-next:after {
+        content: none !important;
+      }
+      .swiper-button-next img,
+      .swiper-button-prev img {
+        vertical-align: top !important;
+      }
+      .swiper-button-next {
+        width: 40px;
+        right: 0;
+      }
+      .swiper-button-prev img,
+      .swiper-button-next img {
+        width: 100%;
+      }
+      .swiper-button-prev {
+        width: 40px;
+        left: 0;
+      }
+      @media (width<768px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 29px;
+        }
+      }
+      .accordion-item {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap position-relative">
+      <section class="dark-bg-box">
+        <div class="overlay-page-item position-relative">
+          <div class="overlay-page-item-pic">
+            <img src="./src/web/icon/shopping_cart_4.svg" alt="cart" />
+          </div>
+          <p>Diamond Beauty Care IF Stimulator & skin Lifter Combo</p>
+          <a href="./shopcart.html" class="overlay-page-btn"> inquiry </a>
+          <a href="#" id="x-btn" class="x-btn position-absolute">
+            <img src="./src/web/icon/x_2.svg" alt="X" />
+          </a>
+        </div>
+      </section>
+      <section class="top-search-Member-Box d-none d-md-none d-lg-flex">
+        <form class="d-flex flex-wrap scerch-con w-100 d-lg-none" role="search">
+          <input
+            class="form-contro search-Member-input rounded-0"
+            type="search"
+            placeholder="search.."
+            aria-label="Search"
+          />
+          <button class="search-btn-nav" type="submit">
+            <img
+              src="./src/web/icon/search.png"
+              class="align-middle"
+              alt="放大鏡"
+            />
+          </button>
+          <!-- 會員&尋價車 -->
+          <div class="top-search-box d-flex d-lg-none">
+            <div class="top-search-box-pic">
+              <img
+                src="./src/web/icon/erth.svg"
+                alt="地球"
+                style="width: 20px"
+              />
+            </div>
+            <div class="top-search-txt d-flex" style="margin-right: 40px">
+              <a href="#">TW</a>
+              <p>/</p>
+              <a href="#">EN</a>
+            </div>
+            <a href="./member.html" class="top-search-box-pic">
+              <img src="./src/web/icon/member.svg" alt="會員" />
+            </a>
+            <a
+              href="./shopcart.html"
+              class="top-search-box-pic position-relative"
+            >
+              <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+              <!-- 購物車數量 -->
+              <div class="cartNum position-absolute">
+                <p>0</p>
+              </div>
+            </a>
+          </div>
+        </form>
+      </section>
+      <section class="top-md-logod-none w-100 d-none d-md-none d-lg-block">
+        <a href="./index.html" class="top-md-logo-pic">
+          <h1>
+            <img src="./src/web/icon/logo.png" alt="astek-health" />
+          </h1>
+        </a>
+      </section>
+      <section class="section-top-navbar">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand logopic d-block w-100 d-md-block d-lg-none"
+              href="./index.html"
+            >
+              <img src="./src/web/icon/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="hb-btn-container">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav TopNavBar">
+                <li>
+                  <a href="./about.html">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="./r&d.html">R&D</a>
+                </li>
+                <li>
+                  <a href="./product.html">PRODUCT</a>
+                </li>
+                <li>
+                  <a href="./odm-oem.html">ODM/OEM</a>
+                </li>
+                <li>
+                  <a href="./e-catalog.html">E-CATALOG</a>
+                </li>
+                <li>
+                  <a href="./certification.html">CERTIFICATION</a>
+                </li>
+                <li>
+                  <a href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <form
+                class="d-flex flex-wrap scerch-con w-100 d-md-none"
+                role="search"
+              >
+                <input
+                  class="form-contro search-Member-input rounded-0"
+                  type="search"
+                  placeholder="search.."
+                  aria-label="Search"
+                />
+                <button class="search-btn-nav" type="submit">
+                  <img
+                    src="./src/web/icon/search.png"
+                    class="align-middle"
+                    alt="放大鏡"
+                  />
+                </button>
+                <!-- 會員&尋價車 -->
+                <div class="top-search-box d-flex d-md-none">
+                  <a href="#" class="top-search-box-pic">
+                    <img
+                      src="./src/web/icon/erth.svg"
+                      alt="地球"
+                      style="width: 20px"
+                    />
+                  </a>
+                  <div class="top-search-txt d-flex" style="margin-right: 40px">
+                    <a href="#">TW</a>
+                    <p>/</p>
+                    <a href="#">EN</a>
+                  </div>
+                  <a href="/member.html " class="top-search-box-pic">
+                    <img src="./src/web/icon/member.svg" alt="會員" />
+                  </a>
+                  <a
+                    href="/shopcart.html"
+                    class="top-search-box-pic position-relative"
+                  >
+                    <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+                    <!-- 購物車數量 -->
+                    <div class="cartNum position-absolute">
+                      <p>0</p>
+                    </div>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="section-banner">
+        <img
+          class="d-none w-100 d-md-block"
+          src="./src/web/r&d/r&d_banner.png"
+          alt="r&d-banner"
+        />
+        <img
+          class="d-block w-100 d-md-none"
+          src="./src/phone/r&d/r&d_banner.png"
+          alt="r&d-banner"
+        />
+      </section>
+      <section class="bread-list">
+        <ol class="bread-list-main">
+          <li>
+            <a href="index.html" class="bread-list-home d-block">
+              <img class="w-100" src="./src/web/icon/home.svg" alt="homepic" />
+            </a>
+          </li>
+          <div class="bread-list-arrow">
+            <img class="w-100" src="./src/web/icon/arrow_5.svg" alt="arrow" />
+          </div>
+          <li><p>PRODUCT</p></li>
+        </ol>
+      </section>
+      <section class="page-title-main d-block d-md-none">
+        <div class="page-title-main-txt">
+          <h2>PRODUCT</h2>
+        </div>
+      </section>
+      <!-- ======以上header===== -->
+      <section class="product-main position">
+        <div class="productBigbox">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-3 p-0">
+                <div class="menu-controL">
+                  <!-- 手機板選單 -->
+                  <div
+                    class="accordion menu-list-phone accordion-flush d-block w-100 d-md-none"
+                    id="rwd-main-menu "
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseMain"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseMain"
+                        >
+                          PRODUCT LIST
+                          <div class="phone-sm-icon">
+                            <img src="./src/web/icon/arrow_1.png" alt="arrow" />
+                          </div>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseMain"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body w-100 p-0">
+                          <div
+                            class="accordion rounded-0 border-0"
+                            id="accordionExample "
+                          >
+                            <!-- 1 -->
+                            <a href="#" class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button
+                                  class="accordion-button collapsed phone-list-item"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFirst"
+                                  aria-expanded="false"
+                                  aria-controls="collapseFirst"
+                                >
+                                  Healthy Care Apparatus
+                                </button>
+                              </h2>
+                              <!-- <div
+                                id="collapseFirst"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div
+                                  class="accordion-body phone-list-item-body"
+                                >
+                                  <ul>
+                                    <li><a href="#">次分類一</a></li>
+                                    <li><a href="#">次分類二</a></li>
+                                    <li><a href="#">次分類三</a></li>
+                                  </ul>
+                                </div>
+                              </div> -->
+                            </a>
+                            <!-- 2 -->
+                            <a href="#" class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button
+                                  class="accordion-button collapsed phone-list-item"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="collapseTwo"
+                                >
+                                  Healthy Care Apparatus
+                                </button>
+                              </h2>
+                              <!-- <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div
+                                  class="accordion-body phone-list-item-body"
+                                >
+                                  <ul>
+                                    <li><a href="#">次分類一</a></li>
+                                    <li><a href="#">次分類二</a></li>
+                                    <li><a href="#">次分類三</a></li>
+                                  </ul>
+                                </div>
+                              </div> -->
+                            </a>
+                            <!-- 3 -->
+                            <a href="#" class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button
+                                  class="accordion-button collapsed phone-list-item"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="collapseThree"
+                                >
+                                  Sporting Fitness
+                                </button>
+                              </h2>
+                              <!-- <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div class="accordion-body">
+                                  <div
+                                    class="accordion-body phone-list-item-body"
+                                  >
+                                    <ul>
+                                      <li><a href="#">次分類一</a></li>
+                                      <li><a href="#">次分類二</a></li>
+                                      <li><a href="#">次分類三</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div> -->
+                            </a>
+                            <!-- 4 -->
+                            <a href="#" class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button
+                                  class="accordion-button collapsed phone-list-item"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFour"
+                                  aria-expanded="false"
+                                  aria-controls="collapseFour"
+                                >
+                                  Electrode Pad
+                                </button>
+                              </h2>
+                              <!-- <div
+                                id="collapseFour"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div class="accordion-body">
+                                  <div
+                                    class="accordion-body phone-list-item-body"
+                                  >
+                                    <ul>
+                                      <li><a href="#">次分類一</a></li>
+                                      <li><a href="#">次分類二</a></li>
+                                      <li><a href="#">次分類三</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div> -->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 網頁版選單 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <a href="#" class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed left-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                            <span>Healthy Care Apparatus</span>
+                          </button>
+                        </h2>
+                        <!-- <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <a href="#" class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed left-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            <span>Beauty Care Products</span>
+                          </button>
+                        </h2>
+                        <!-- <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <a href="#" class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed left-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThird"
+                            aria-expanded="false"
+                            aria-controls="collapseThird"
+                          >
+                            <span>Sporting Fitness</span>
+                          </button>
+                        </h2>
+                        <!-- <div
+                          id="collapseThird"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <a href="#" class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed left-list-item"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                          >
+                            <span>Electrode Pad</span>
+                          </button>
+                        </h2>
+                        <!-- <div
+                          id="collapseFour"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="row">
+                  <!-- 輪播牆 -->
+                  <div class="col-12 col-md-6 swiper-box">
+                    <!-- Swiper -->
+                    <div
+                      style="
+                        --swiper-navigation-color: none;
+                        --swiper-pagination-color: none;
+                      "
+                      class="swiper mySwiper2"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img
+                          class="w-100"
+                          src="./src/web/icon/arrow_10.svg"
+                          alt="left"
+                        />
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img
+                          class="w-100"
+                          src="./src/web/icon/arrow_9.svg"
+                          alt="right"
+                        />
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper productSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="w-100"
+                            src="./src/web/products/product-inner/pic_b.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 加入尋價車 -->
+                  <div class="col-12 col-md-6 pro-inner-main">
+                    <div class="pro-inner-title">
+                      <h3>
+                        Diamond Beauty Care IF Stimulator & skin Lifter Combo
+                        <span>AK-320 + KR-100</span>
+                      </h3>
+                    </div>
+                    <div class="pro-inner-contant">
+                      <p>AK-320 + KR-100</p>
+                      <p>AK3-20 Pain-relief IF stimualtor</p>
+                      <p>KR-100 Facial lifter / roller</p>
+                      <ul class="pro-inner-contant-list">
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-diamond-fill"
+                            viewBox="0 0 16 16"
+                            style="flex-shrink: 0"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"
+                            />
+                          </svg>
+                          <p>
+                            IF Pain-Relief Massage - 8 modes: Neck/Shoulders,
+                            Waist, Face, Arms, Legs and Body
+                          </p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-diamond-fill"
+                            viewBox="0 0 16 16"
+                            style="flex-shrink: 0"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"
+                            />
+                          </svg>
+                          <p>Firm Skin</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-diamond-fill"
+                            viewBox="0 0 16 16"
+                            style="flex-shrink: 0"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"
+                            />
+                          </svg>
+                          <p>Beauty Skin</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-diamond-fill"
+                            viewBox="0 0 16 16"
+                            style="flex-shrink: 0"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"
+                            />
+                          </svg>
+                          <p>Skin Lifting</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-diamond-fill"
+                            viewBox="0 0 16 16"
+                            style="flex-shrink: 0"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"
+                            />
+                          </svg>
+                          <p>Shaping Skin</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 數量 -->
+                    <div class="howmuch-section">
+                      <form action="" class="howmuch-box">
+                        <p>Amount</p>
+                        <span class="howmuch-item"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="36"
+                            height="36"
+                            fill="currentColor"
+                            class="bi bi-dash"
+                            viewBox="0 0 16 16"
+                            color="#fff"
+                          >
+                            <path
+                              d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+                            /></svg
+                        ></span>
+
+                        <input class="howmuch" type="number" />
+                        <span class="howmuch-item">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="36"
+                            height="36"
+                            fill="currentColor"
+                            class="bi bi-plus"
+                            viewBox="0 0 16 16"
+                            color="#fff"
+                          >
+                            <path
+                              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                            /></svg
+                        ></span>
+                      </form>
+                    </div>
+                    <!-- 到購物車 -->
+                    <button
+                      class="addPrice"
+                      id="addbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      <a href="#"> inquiry </a>
+                    </button>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="overlay-page-item position-relative">
+                            <div class="overlay-page-item-pic">
+                              <img
+                                src="./src/web/icon/shopping_cart_4.svg"
+                                alt="cart"
+                              />
+                            </div>
+                            <p>
+                              Diamond Beauty Care IF Stimulator & skin Lifter
+                              Combo
+                            </p>
+                            <a href="./shopcart.html" class="overlay-page-btn">
+                              inquiry
+                            </a>
+                            <a
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              href="#"
+                              id="x-btn"
+                              class="x-btn position-absolute"
+                            >
+                              <img src="./src/web/icon/x_2.svg" alt="X" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 資訊欄位 -->
+                  <div class="col-12 col-md-12">
+                    <ul
+                      class="nav nav-tabs mt-md-5 g-0 d-flex big-tabs"
+                      id="myTab"
+                      role="tablist"
+                    >
+                      <li class="nav-item product-item" role="presentation">
+                        <button
+                          class="nav-link product-item-btn active rounded-0"
+                          id="home-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#home-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="home-tab-pane"
+                          aria-selected="true"
+                        >
+                          DESCRIPTION
+                        </button>
+                      </li>
+                      <li class="nav-item product-item" role="presentation">
+                        <button
+                          class="nav-link product-item-btn rounded-0 nav-link-bc"
+                          id="profile-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#profile-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="profile-tab-pane"
+                          aria-selected="false"
+                        >
+                          SEPCIFICATION
+                        </button>
+                      </li>
+
+                      <li class="nav-item product-item" role="presentation">
+                        <button
+                          class="nav-link product-item-btn rounded-0"
+                          id="safety-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#safety-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="safety-tab-pane"
+                          aria-selected="false"
+                        >
+                          SAFETY/QUALITY
+                        </button>
+                      </li>
+                    </ul>
+                    <div
+                      class="tab-content product-inner-content"
+                      id="myTabContent"
+                    >
+                      <div
+                        class="product-inner-item tab-pane fade show active"
+                        id="home-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                        tabindex="0"
+                      >
+                        <p>
+                          Diamond Beauty Care IF Stimulator & skin Lifter Combo
+                        </p>
+                        <p>
+                          Beauty care and health care combo 2 in 1 5 strength
+                          levels and 8 modes
+                        </p>
+                        <div class="back-btn-section">
+                          <button class="back-btn">
+                            <a href="./newproduct.html">
+                              <div class="backBtn-pic">
+                                <img
+                                  src="./src/web/icon/arrow_11.svg"
+                                  alt="arrow"
+                                />
+                              </div>
+                              BACK</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade product-inner-item"
+                        id="profile-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                        tabindex="0"
+                      >
+                        <p>內文區</p>
+                        <div class="back-btn-section">
+                          <button class="back-btn">
+                            <a href="./newproduct.html">
+                              <div class="backBtn-pic">
+                                <img
+                                  src="./src/web/icon/arrow_11.svg"
+                                  alt="arrow"
+                                />
+                              </div>
+                              BACK</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade product-inner-item"
+                        id="safety-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="safety-tab"
+                        tabindex="0"
+                      >
+                        <p>內文區</p>
+                        <div class="back-btn-section">
+                          <button class="back-btn">
+                            <a href="./newproduct.html">
+                              <div class="backBtn-pic">
+                                <img
+                                  src="./src/web/icon/arrow_11.svg"
+                                  alt="arrow"
+                                />
+                              </div>
+                              BACK</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====以下footer====== -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-top-Contant-box position-relative">
+            <h4>Contant</h4>
+            <p>
+              If you have any questions, or are interested in the product,
+              please contact us
+            </p>
+
+            <img
+              src="./src/web/icon/arrow_4.svg"
+              alt="arrow"
+              style="width: 68px; height: 68px"
+            />
+
+            <div class="footer-top-Contant-title position-absolute">
+              <h4>Contant</h4>
+              <p>
+                If you have any questions, or are interested in the product,
+                please contact us
+              </p>
+              <img
+                src="./src/web/icon/arrow_4.svg"
+                alt="arrow"
+                style="width: 68px; height: 68px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottem">
+          <div class="footer-bottem-logo">
+            <img src="./src/web/icon/footer_logo.png" alt="footer-logo" />
+          </div>
+          <div class="footer-contant">
+            <ul class="footer-contant-message">
+              <li>
+                <a href="tel:+886-6-2729488">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/tel.svg" alt="電話" />
+                  </div>
+                  <p>+886-6-2729488</p>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+886-6-2712818">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/fax.svg" alt="傳真" />
+                  </div>
+                  <p>+886-6-2712818</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sales@astek-health.com">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/mail.svg" alt="Email" />
+                  </div>
+                  <p>sales@astek-health.com</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/nwJ85mVpPs78xA6V7" target="_blank">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/address.svg" alt="地址" />
+                  </div>
+
+                  <p>
+                    No. 118, Taizih Rd., Rende District, Tainan City 71741,
+                    TAIWAN
+                  </p></a
+                >
+              </li>
+            </ul>
+            <div class="footer-contant-linkbox">
+              <div class="footer-contant-link-item">
+                <a href="./about.html">ABOUT US</a>
+                <a href="./r&d.html">R&D</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./product.html">PRODUCT</a>
+                <a href="./odm-oem.html">ODM/OEM</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./e-catalog.html">E-CATALOG</a>
+                <a href="./certification.html">CERTIFICATION</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./contact.html">CONTACT</a>
+                <a href="./siteMap.html">SITE MAP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <div class="copyright-box">
+          <p>
+            Copyright@2023 Astek Technology Ltd.
+            <span
+              >Designed by
+              <a
+                class="renu-http"
+                href="https://www.renu.com.tw/
+              "
+                >RENU</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="scroll-box" id="scrollBtn">
+        <div class="scroll-pic">
+          <img src="./src/web/icon/arrow_google.png" alt="arrow" />
+        </div>
+        <p>TOP</p>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- owl-carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".productSwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>

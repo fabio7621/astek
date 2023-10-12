@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="astek-health,亞星健康科技" />
+    <meta name="description" content="astek-health,亞星健康科技" />
+    <title>astek-health</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Didact+Gothic&family=Montserrat:wght@400;500;600;700&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BS-CSS    -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/stylesheet/bootstrap.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" />
+    <link rel="stylesheet" href="./src/stylesheet/reset.css" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./src/stylesheet/main.css" />
+    <link rel="stylesheet" href="./src/stylesheet/about.css" />
+    <link rel="stylesheet" href="./src/stylesheet/r&d.css" />
+    <link rel="stylesheet" href="./src/stylesheet/product.css" />
+    <link rel="stylesheet" href="./src/stylesheet/member.css" />
+    <!-- owl -->
+    <link rel="stylesheet" href="./src/stylesheet/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/stylesheet/owl.theme.default.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="top-search-Member-Box d-none d-md-none d-lg-flex">
+        <form class="d-flex scerch-con position-relative" role="search">
+          <input
+            class="form-contro search-Member-input rounded-0"
+            type="search"
+            placeholder="search.."
+            aria-label="Search"
+          />
+          <button class="search-btn-nav" type="submit">
+            <img
+              src="./src/web/icon/search.png"
+              class="align-middle"
+              alt="放大鏡"
+            />
+          </button>
+          <!-- 會員&尋價車 -->
+          <div class="top-search-box d-flex">
+            <div class="top-search-txt d-flex">
+              <a href="#">TW</a>
+              <p>/</p>
+              <a href="#">EN</a>
+            </div>
+            <a href="./member.html" class="top-search-box-pic">
+              <img src="./src/web/icon/member.svg" alt="會員" />
+            </a>
+            <a
+              href="./shopcart.html"
+              class="top-search-box-pic position-relative"
+            >
+              <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+              <!-- 購物車數量 -->
+              <div class="cartNum position-absolute">
+                <p>0</p>
+              </div>
+            </a>
+          </div>
+        </form>
+      </section>
+      <section class="top-md-logod-none w-100 d-none d-md-none d-lg-block">
+        <a href="./index.html" class="top-md-logo-pic">
+          <h1>
+            <img src="./src/web/icon/logo.png" alt="astek-health" />
+          </h1>
+        </a>
+      </section>
+      <section class="section-top-navbar">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand logopic d-block w-100 d-md-block d-lg-none"
+              href="./index.html"
+            >
+              <img src="./src/web/icon/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="hb-btn-container">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav TopNavBar">
+                <li>
+                  <a href="./about.html">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="./r&d.html">R&D</a>
+                </li>
+                <li>
+                  <a href="./product.html">PRODUCT</a>
+                </li>
+                <li>
+                  <a href="./odm-oem.html">ODM/OEM</a>
+                </li>
+                <li>
+                  <a href="./e-catalog.html">E-CATALOG</a>
+                </li>
+                <li>
+                  <a href="./certification.html">CERTIFICATION</a>
+                </li>
+                <li>
+                  <a href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <form
+                class="d-flex flex-wrap scerch-con w-100 d-lg-none"
+                role="search"
+              >
+                <input
+                  class="form-contro search-Member-input rounded-0"
+                  type="search"
+                  placeholder="search.."
+                  aria-label="Search"
+                />
+                <button class="search-btn-nav" type="submit">
+                  <img
+                    src="./src/web/icon/search.png"
+                    class="align-middle"
+                    alt="放大鏡"
+                  />
+                </button>
+                <!-- 會員&尋價車 -->
+                <div class="top-search-box d-flex d-lg-none">
+                  <a href="#" class="top-search-box-pic">
+                    <img
+                      src="./src/web/icon/erth.svg"
+                      alt="地球"
+                      style="width: 20px"
+                    />
+                  </a>
+                  <div class="top-search-txt d-flex" style="margin-right: 40px">
+                    <a href="#">TW</a>
+                    <p>/</p>
+                    <a href="#">EN</a>
+                  </div>
+                  <a href="./member.html" class="top-search-box-pic">
+                    <img src="./src/web/icon/member.svg" alt="會員" />
+                  </a>
+                  <a
+                    href="./shopcart.html"
+                    class="top-search-box-pic position-relative"
+                  >
+                    <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+                    <!-- 購物車數量 -->
+                    <div class="cartNum position-absolute">
+                      <p>0</p>
+                    </div>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="section-banner">
+        <img
+          class="d-none w-100 d-md-block"
+          src="./src/web/contact/contact_banner.png"
+          alt="r&d-banner"
+        />
+        <img
+          class="d-block w-100 d-md-none"
+          src="./src/phone/contact/contact_banner.png"
+          alt="r&d-banner"
+        />
+      </section>
+      <section class="bread-list">
+        <ol class="bread-list-main">
+          <li>
+            <a href="index.html" class="bread-list-home d-block">
+              <img class="w-100" src="./src/web/icon/home.svg" alt="homepic" />
+            </a>
+          </li>
+          <div class="bread-list-arrow">
+            <img class="w-100" src="./src/web/icon/arrow_5.svg" alt="arrow" />
+          </div>
+          <li><p>MEMBER</p></li>
+        </ol>
+      </section>
+      <section class="page-title-main d-block d-md-none">
+        <div class="page-title-main-txt">
+          <h2>MEMBER</h2>
+        </div>
+      </section>
+      <!-- ======以上header===== -->
+      <section class="product-main">
+        <div class="productBigbox">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-3 p-0">
+                <div class="menu-controL">
+                  <!-- 手機板選單 -->
+                  <div
+                    class="accordion menu-list-phone accordion-flush d-block w-100 d-md-none"
+                    id="rwd-main-menu "
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseMain"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseMain"
+                        >
+                          MEMBER LIST
+                          <div class="phone-sm-icon">
+                            <img src="./src/web/icon/arrow_1.png" alt="arrow" />
+                          </div>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseMain"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body w-100 p-0">
+                          <div
+                            class="accordion rounded-0 border-0"
+                            id="accordionExample "
+                          >
+                            <!-- 1 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <a
+                                  class="member-link"
+                                  href="./member-profile.html"
+                                >
+                                  <button
+                                    class="accordion-button collapsed phone-list-item"
+                                    type="button"
+                                    aria-expanded="false"
+                                  >
+                                    DATA MODIFICATION
+                                  </button>
+                                </a>
+                              </h2>
+                              <div
+                                id="collapseFirst"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div
+                                  class="accordion-body phone-list-item-body"
+                                >
+                                  <!-- <ul>
+                                    <li><a href="#">次分類一</a></li>
+                                    <li><a href="#">次分類二</a></li>
+                                    <li><a href="#">次分類三</a></li>
+                                  </ul> -->
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <a
+                                  class="member-link"
+                                  href="./member-change.html"
+                                  ><button
+                                    class="accordion-button collapsed phone-list-item"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                  >
+                                    <span>CHANGE PASSWORD</span>
+                                  </button>
+                                </a>
+                              </h2>
+                              <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div
+                                  class="accordion-body phone-list-item-body"
+                                >
+                                  <!-- <ul>
+                                    <li><a href="#">次分類一</a></li>
+                                    <li><a href="#">次分類二</a></li>
+                                    <li><a href="#">次分類三</a></li>
+                                  </ul> -->
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <a class="member-link" href="#">
+                                  <button
+                                    class="accordion-button collapsed phone-list-item"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                  >
+                                    SIGN OUT
+                                  </button>
+                                </a>
+                              </h2>
+                              <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                              >
+                                <div class="accordion-body">
+                                  <div
+                                    class="accordion-body phone-list-item-body"
+                                  >
+                                    <!-- <ul>
+                                      <li><a href="#">次分類一</a></li>
+                                      <li><a href="#">次分類二</a></li>
+                                      <li><a href="#">次分類三</a></li>
+                                    </ul> -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 網頁版選單 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <a class="member-link" href="./member-profile.html"
+                            ><button
+                              class="accordion-button collapsed left-list-item"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
+                              <span>DATA MODIFICATION</span>
+                            </button></a
+                          >
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <!-- <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <a class="member-link" href="./member-change.html">
+                            <button
+                              class="accordion-button collapsed left-list-item"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <span>CHANGE PASSWORD</span>
+                            </button>
+                          </a>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <!-- <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="menu-list d-none w-100 d-md-block rounded-0">
+                    <div class="accordion" id="accordionExample ">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <a class="member-link" href="#">
+                            <button
+                              class="accordion-button collapsed left-list-item"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThird"
+                              aria-expanded="false"
+                              aria-controls="collapseThird"
+                            >
+                              <span>SIGN OUT</span>
+                            </button>
+                          </a>
+                        </h2>
+                        <div
+                          id="collapseThird"
+                          class="accordion-collapse collapse left-list-item"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="accordion-body left-list-item-body">
+                              <!-- <ul>
+                                <li><a href="#">次分類一</a></li>
+                                <li><a href="#">次分類二</a></li>
+                                <li><a href="#">次分類三</a></li>
+                              </ul> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="row">
+                  <div class="col-12 p-0">
+                    <div class="product-top-title d-none d-md-block">
+                      <h2>MEMBER</h2>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="member-login-main">
+                      <div class="member-login-title">
+                        <h2>PASSWORD CHANGE</h2>
+                      </div>
+                      <div class="member-box member-login">
+                        <div class="input-box">
+                          <div class="input-item-big">
+                            <label class="mb-md-3 mb-3" for="contact-mail"
+                              >E-mail</label
+                            >
+                            <div class="profile-logined-mail mb-md-5 mb-3">
+                              <p>sales@astek-health.com</p>
+                            </div>
+                            <!--已登入mail -->
+                          </div>
+                          <div class="input-duble">
+                            <div class="input-item">
+                              <label class="mb-md-3 mb-3" for="current-password"
+                                >current password</label
+                              >
+                              <input
+                                class="mb-md-3 mb-3"
+                                type="password"
+                                id="current-password"
+                              />
+                            </div>
+                            <div class="input-item">
+                              <label class="mb-md-3 mb-3" for="password-set"
+                                >confirm settings</label
+                              >
+                              <input
+                                class="mb-md-3 mb-3"
+                                type="password"
+                                id="password-set"
+                              />
+                            </div>
+                          </div>
+                          <div class="input-duble">
+                            <div class="input-item">
+                              <label class="mb-md-3 mb-3" for="confirm-password"
+                                >password confirm</label
+                              >
+                              <input
+                                class="mb-md-3 mb-3"
+                                type="password"
+                                id="confirm-password"
+                              />
+                            </div>
+                          </div>
+                          <div class="contant-submit-box w-100 d-flex">
+                            <button
+                              class="contant-submit-item member-submit-login"
+                            >
+                              revise
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====以下footer====== -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-top-Contant-box position-relative">
+            <h4>Contant</h4>
+            <p>
+              If you have any questions, or are interested in the product,
+              please contact us
+            </p>
+
+            <img
+              src="./src/web/icon/arrow_4.svg"
+              alt="arrow"
+              style="width: 68px; height: 68px"
+            />
+
+            <div class="footer-top-Contant-title position-absolute">
+              <h4>Contant</h4>
+              <p>
+                If you have any questions, or are interested in the product,
+                please contact us
+              </p>
+              <img
+                src="./src/web/icon/arrow_4.svg"
+                alt="arrow"
+                style="width: 68px; height: 68px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottem">
+          <div class="footer-bottem-logo">
+            <img src="./src/web/icon/footer_logo.png" alt="footer-logo" />
+          </div>
+          <div class="footer-contant">
+            <ul class="footer-contant-message">
+              <li>
+                <a href="tel:+886-6-2729488">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/tel.svg" alt="電話" />
+                  </div>
+                  <p>+886-6-2729488</p>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+886-6-2712818">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/fax.svg" alt="傳真" />
+                  </div>
+                  <p>+886-6-2712818</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sales@astek-health.com">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/mail.svg" alt="Email" />
+                  </div>
+                  <p>sales@astek-health.com</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/nwJ85mVpPs78xA6V7" target="_blank">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/address.svg" alt="地址" />
+                  </div>
+
+                  <p>
+                    No. 118, Taizih Rd., Rende District, Tainan City 71741,
+                    TAIWAN
+                  </p></a
+                >
+              </li>
+            </ul>
+            <div class="footer-contant-linkbox">
+              <div class="footer-contant-link-item">
+                <a href="./about.html">ABOUT US</a>
+                <a href="./r&d.html">R&D</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./product.html">PRODUCT</a>
+                <a href="./odm-oem.html">ODM/OEM</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./e-catalog.html">E-CATALOG</a>
+                <a href="./certification.html">CERTIFICATION</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./contact.html">CONTACT</a>
+                <a href="./siteMap.html">SITE MAP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <div class="copyright-box">
+          <p>
+            Copyright@2023 Astek Technology Ltd.
+            <span
+              >Designed by
+              <a
+                class="renu-http"
+                href="https://www.renu.com.tw/
+              "
+                >RENU</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="scroll-box" id="scrollBtn">
+        <div class="scroll-pic">
+          <img src="./src/web/icon/arrow_google.png" alt="arrow" />
+        </div>
+        <p>TOP</p>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/scroll-top.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </body>
+</html>

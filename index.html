@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="astek-health,亞星健康科技" />
+    <meta name="description" content="astek-health,亞星健康科技" />
+    <title>astek-health</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Didact+Gothic&family=Montserrat&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BS-CSS    -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/stylesheet/bootstrap.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" />
+    <link rel="stylesheet" href="./src/stylesheet/reset.css" />
+    <!-- ................ -->
+    <link rel="stylesheet" href="./src/stylesheet/main.css" />
+    <!-- owl -->
+    <link rel="stylesheet" href="./src/stylesheet/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/stylesheet/owl.theme.default.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      :root {
+        --swiper-theme-color: #858586;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <section class="top-search-Member-Box d-none d-md-none d-lg-flex">
+        <form class="d-flex scerch-con position-relative" role="search">
+          <input
+            class="form-contro search-Member-input rounded-0"
+            type="search"
+            placeholder="search.."
+            aria-label="Search"
+          />
+          <a href="#" class="search-btn-nav" type="submit">
+            <img
+              src="./src/web/icon/search.png"
+              class="align-middle"
+              alt="放大鏡"
+            />
+          </a>
+          <!-- 會員&尋價車 -->
+          <div class="top-search-box d-flex">
+            <div class="top-search-txt d-flex">
+              <a href="#">TW</a>
+              <p>/</p>
+              <a href="#">EN</a>
+            </div>
+            <a href="./member.html" class="top-search-box-pic">
+              <img src="./src/web/icon/member.svg" alt="會員" />
+            </a>
+            <a
+              href="/shopcart.html"
+              class="top-search-box-pic position-relative"
+            >
+              <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+              <!-- 購物車數量 -->
+              <div class="cartNum position-absolute">
+                <p>0</p>
+              </div>
+            </a>
+          </div>
+        </form>
+      </section>
+      <section class="top-md-logod-none w-100 d-none d-md-none d-lg-block">
+        <a href="./index.html" class="top-md-logo-pic">
+          <h1>
+            <img src="./src/web/icon/logo.png" alt="astek-health" />
+          </h1>
+        </a>
+      </section>
+      <section class="section-top-navbar">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand logopic d-block w-100 d-md-block d-lg-none"
+              href="./index.html"
+            >
+              <img src="./src/web/icon/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="hb-btn-container">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav TopNavBar">
+                <li>
+                  <a href="./about.html">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="./r&d.html">R&D</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    class="dropdown-toggle position-relative"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="./product.html"
+                    >PRODUCT<svg
+                      class="position-absolute top-drop-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <style>
+                        svg {
+                          fill: #bdc2cc;
+                        }
+                      </style>
+                      <path
+                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                      />
+                    </svg>
+                  </a>
+
+                  <ul class="dropdown-menu top-drop-menu border-0">
+                    <li>
+                      <a
+                        href="./product.html"
+                        class="dropdown-item mb-0 top-drop-item mb-1"
+                        href="#"
+                        >product01</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./product.html"
+                        class="dropdown-item mb-0 top-drop-item mb-1"
+                        href="#"
+                        >product03</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./product.html"
+                        class="dropdown-item mb-0 top-drop-item mb-1"
+                        href="#"
+                        >product03</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./odm-oem.html">ODM/OEM</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="./e-catalog.html"
+                    class="dropdown-toggle position-relative"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >E-CATALOG<svg
+                      class="position-absolute top-drop-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <style>
+                        svg {
+                          fill: #bdc2cc;
+                        }
+                      </style>
+                      <path
+                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                      /></svg
+                  ></a>
+                  <ul class="dropdown-menu top-drop-menu border-0">
+                    <li>
+                      <a
+                        class="dropdown-item mb-0 top-drop-item"
+                        href="./e-catalog.html"
+                        >product01</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item mb-0 top-drop-item"
+                        href="./e-catalog.html"
+                        >product02</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item mb-0 top-drop-item"
+                        href="./e-catalog.html"
+                        >product03</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./certification.html">CERTIFICATION</a>
+                </li>
+                <li>
+                  <a href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <form
+                class="d-flex flex-wrap scerch-con w-100 d-md-flex d-lg-none"
+                role="search"
+              >
+                <input
+                  class="form-contro search-Member-input rounded-0"
+                  type="search"
+                  placeholder="search.."
+                  aria-label="Search"
+                />
+                <a href="#" class="search-btn-nav" type="submit">
+                  <img
+                    src="./src/web/icon/search.png"
+                    class="align-middle"
+                    alt="放大鏡"
+                  />
+                </a>
+                <!-- 會員&尋價車 -->
+                <div class="top-search-box d-flex d-lg-none">
+                  <a href="#" class="top-search-box-pic">
+                    <img
+                      src="./src/web/icon/erth.svg"
+                      alt="地球"
+                      style="width: 20px"
+                    />
+                  </a>
+                  <div class="top-search-txt d-flex" style="margin-right: 40px">
+                    <a href="#">TW</a>
+                    <p>/</p>
+                    <a href="#">EN</a>
+                  </div>
+                  <a href="./member.html" class="top-search-box-pic">
+                    <img src="./src/web/icon/member.svg" alt="會員" />
+                  </a>
+                  <a
+                    href="./shopcart.html"
+                    class="top-search-box-pic position-relative"
+                  >
+                    <img src="./src/web/icon/shopping_cart.svg" alt="購物車" />
+                    <!-- 購物車數量 -->
+                    <div class="cartNum cartNumP position-absolute">
+                      <p>0</p>
+                    </div>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="section-banner-index">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="d-none w-100 d-md-block"
+                src="./src/web/home/web_banner_1.png"
+                alt="banner"
+              />
+              <img
+                class="d-block w-100 d-md-none"
+                src="./src/phone/home/phone_banner_1.png"
+                alt="banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="d-none w-100 d-md-block"
+                src="./src/web/home/web_banner_2.png"
+                alt="banner"
+              />
+              <img
+                class="d-block w-100 d-md-none"
+                src="./src/phone/home/phone_banner_5.png"
+                alt="banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="d-none w-100 d-md-block"
+                src="./src/web/home/web_banner_3.png"
+                alt="banner"
+              />
+              <img
+                class="d-block w-100 d-md-none"
+                src="./src/phone/home/phone_banner_3.png"
+                alt="banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="d-none w-100 d-md-block"
+                src="./src/web/home/web_banner_4.png"
+                alt="banner"
+              />
+              <img
+                class="d-block w-100 d-md-none"
+                src="./src/phone/home/phone_banner_4.png"
+                alt="banner"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section-attest-banner">
+        <img
+          class="d-none w-100 d-md-block"
+          src="./src/web/home/attest_banner.png"
+          alt="標章Banner"
+        />
+        <img
+          class="d-block w-100 d-md-none"
+          src="./src/phone/home/attest_banner_p.png"
+          alt="標章Banner"
+        />
+      </section>
+      <section class="section-home-card">
+        <div class="section-home-card-main">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="home-card-item position-relative">
+                  <div class="home-card-item-pic">
+                    <img
+                      class="w-100"
+                      src="./src/web/home/product_1.png"
+                      alt="productCard"
+                    />
+                  </div>
+                  <div
+                    class="home-card-color position-absolute"
+                    style="background-color: #124d749d"
+                  >
+                    <p>HEALTH CARE</p>
+                    <a class="align-items-center" href="#">
+                      <span
+                        >READ MORE
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          /></svg
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="home-card-item-r position-relative">
+                  <div class="home-card-item-pic p-0">
+                    <img
+                      class="w-100"
+                      src="./src/web/home/product_2.png"
+                      alt="productCard"
+                    />
+                  </div>
+                  <div
+                    class="home-card-color position-absolute"
+                    style="background-color: #fb966eb2"
+                  >
+                    <p>BEAUTY CARE</p>
+                    <a class="align-items-center" href="#">
+                      <span
+                        >READ MORE
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          /></svg
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="home-card-item position-relative">
+                  <div class="home-card-item-pic">
+                    <img
+                      class="w-100"
+                      src="./src/web/home/product_3.png"
+                      alt="productCard"
+                    />
+                  </div>
+                  <div
+                    class="home-card-color position-absolute"
+                    style="background-color: #442b21a4"
+                  >
+                    <p>SPORTING</p>
+                    <a class="align-items-center" href="#">
+                      <span
+                        >READ MORE
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          /></svg
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-about-us">
+        <div class="section-about-us-main">
+          <div class="container-fluid">
+            <div class="row section-about-usBox">
+              <div class="col-12 col-md-6 p-0 order-1 order-md-0 order-lg0">
+                <div class="section-about-us-item p-0">
+                  <img
+                    class="w-100"
+                    src="./src/web/home/pic_2.png"
+                    alt="building"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6 p-0">
+                <div class="section-about-us-item-txt">
+                  <h2>About Us</h2>
+                  <p>
+                    ASTEK Technology Ltd.-was established in 1988 starting with
+                    electroonic controls of home appliances and fitness
+                    equipment as an professional OEM/ODM manufacturer in the
+                    fields. We are also forerunner of designing and
+                    manufacturing in the PWM DC motor control in Taiwan.
+                  </p>
+                  <a class="more-btn" href="./about.html">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 最新產品小輪播圖 -->
+      <section class="section-home-newProduct">
+        <div class="section-home-newProduct-title">
+          <h3>New Product</h3>
+        </div>
+        <div class="newProduct-box owl-carousel owl-theme">
+          <a href="./product-inner.html" class="item">
+            <p>PRODUCT-1</p>
+            <div class="home-newProduct-pic">
+              <img
+                class="w-100"
+                src="./src/web/home/product1.png"
+                alt="product"
+              />
+            </div>
+          </a>
+          <a href="./product-inner.html" class="item">
+            <p>PRODUCT-2</p>
+            <div class="home-newProduct-pic">
+              <img
+                class="w-100"
+                src="./src/web/home/product2.png"
+                alt="product"
+              />
+            </div>
+          </a>
+          <a href="./product-inner.html" class="item">
+            <p>PRODUCT-3</p>
+            <div class="home-newProduct-pic">
+              <img
+                class="w-100"
+                src="./src/web/home/product3.png"
+                alt="product"
+              />
+            </div>
+          </a>
+          <a href="./product-inner.html" class="item">
+            <p>PRODUCT-4</p>
+            <div class="home-newProduct-pic">
+              <img
+                class="w-100"
+                src="./src/web/home/product1.png"
+                alt="product"
+              />
+            </div>
+          </a>
+        </div>
+        <a href="./product-inner.html" class="owl-product-moreben">more</a>
+      </section>
+      <footer style="background-color: #f4f7fc">
+        <div class="footer-top">
+          <div class="footer-top-Contant-box position-relative">
+            <h4>Contant</h4>
+            <p>
+              If you have any questions, or are interested in the product,
+              please contact us
+            </p>
+
+            <img
+              src="./src/web/icon/arrow_4.svg"
+              alt="arrow"
+              style="width: 68px; height: 68px"
+            />
+
+            <a
+              href="./contact.html"
+              class="footer-top-Contant-title position-absolute"
+            >
+              <h4>Contant</h4>
+              <p>
+                If you have any questions, or are interested in the product,
+                please contact us
+              </p>
+              <img
+                src="./src/web/icon/arrow_4.svg"
+                alt="arrow"
+                style="width: 68px; height: 68px"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottem">
+          <div class="footer-bottem-logo">
+            <img src="./src/web/icon/footer_logo.png" alt="footer-logo" />
+          </div>
+          <div class="footer-contant">
+            <ul class="footer-contant-message">
+              <li>
+                <a href="tel:+886-6-2729488">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/tel.svg" alt="電話" />
+                  </div>
+                  <p>+886-6-2729488</p>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+886-6-2712818">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/fax.svg" alt="傳真" />
+                  </div>
+                  <p>+886-6-2712818</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sales@astek-health.com">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/mail.svg" alt="Email" />
+                  </div>
+                  <p>sales@astek-health.com</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/nwJ85mVpPs78xA6V7" target="_blank">
+                  <div class="footer-contant-pic">
+                    <img src="./src/web/icon/address.svg" alt="地址" />
+                  </div>
+
+                  <p>
+                    No. 118, Taizih Rd., Rende District, Tainan City 71741,
+                    TAIWAN
+                  </p></a
+                >
+              </li>
+            </ul>
+            <div class="footer-contant-linkbox">
+              <div class="footer-contant-link-item">
+                <a href="./about.html">ABOUT US</a>
+                <a href="./r&d.html">R&D</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./product.html">PRODUCT</a>
+                <a href="./odm-oem.html">ODM/OEM</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./e-catalog.html">E-CATALOG</a>
+                <a href="./certification.html">CERTIFICATION</a>
+              </div>
+              <div class="footer-contant-link-item">
+                <a href="./contact.html">CONTACT</a>
+                <a href="./siteMap.html">SITE MAP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <div class="copyright-box">
+          <p>
+            Copyright@2023 Astek Technology Ltd.
+            <span
+              >Designed by
+              <a
+                class="renu-http"
+                href="https://www.renu.com.tw/
+              "
+                >RENU</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="scroll-box" id="scrollBtn">
+        <div class="scroll-pic">
+          <img src="./src/web/icon/arrow_google.png" alt="arrow" />
+        </div>
+        <p>TOP</p>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <script src="./js/scroll-top.js"></script>
+    <!-- bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/scroll-top.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- owl-carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 80,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 1,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,582 @@
+.section-banner {
+  width: 100%;
+}
+
+/* 麵包削(完成後可丟main.css  */
+
+.bread-list {
+  width: 100%;
+}
+
+.bread-list-main {
+  width: fit-content;
+
+  margin-left: auto;
+
+  margin-right: 13.333333%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.bread-list-main li p {
+  font-size: 15px;
+
+  color: #70ace5;
+
+  font-weight: 400;
+}
+
+.bread-list-arrow {
+  width: 6px;
+}
+
+.bread-list-home {
+  width: 22px;
+}
+
+.bread-list-pic img {
+  width: 100%;
+
+  vertical-align: top;
+}
+
+/* 關於我 */
+
+.section-aboutPage-us {
+  width: 100%;
+
+  padding-bottom: 9.375%;
+}
+
+.section-aboutPage-main {
+  width: 73.4375%;
+
+  margin: auto;
+}
+
+.circle-pic {
+  position: absolute;
+
+  width: 18.65284vw;
+  height: 18.65284vw;
+
+  left: -10%;
+
+  top: 75%;
+}
+
+.circle-pic img {
+  width: 100%;
+
+  vertical-align: top;
+}
+
+/* .section-aboutPage-item {
+
+  outline: 1px solid #faf;
+
+} */
+
+.section-aboutPage-item h2 {
+  font-size: 3.626943vw;
+
+  font-weight: 600;
+
+  font-family: "Audiowide", cursive;
+
+  color: #70ace5;
+
+  margin-bottom: 1em;
+}
+
+.section-aboutPage-item h3 {
+  font-size: 2.590673vw;
+
+  font-weight: 600;
+
+  color: #21578a;
+
+  margin-bottom: 0.8em;
+}
+
+.section-aboutPage-item p {
+  font-size: 1.036269vw;
+
+  font-weight: 500;
+
+  color: #21578a;
+
+  line-height: 1.8;
+
+  margin-bottom: 1.9em;
+}
+
+.section-aboutPage-pic {
+  width: 80%;
+
+  margin: auto;
+}
+
+.aboutPage-right-pic {
+  width: 25.906735vw;
+
+  right: 0;
+
+  top: 100%;
+
+  transform: translateX(50%) translateY(-50%);
+}
+
+.aboutPage-right-pic img {
+  width: 100%;
+
+  vertical-align: top;
+}
+
+.section-aboutPage-video h3 {
+  font-size: 3.626943vw;
+
+  color: #70ace5;
+
+  width: fit-content;
+
+  font-family: "Audiowide", cursive;
+
+  margin: auto;
+
+  margin-bottom: 2em;
+}
+
+.section-aboutPage-video span:nth-child(1) {
+  color: #9e5da1;
+}
+
+.section-aboutPage-video span:nth-child(2) {
+  color: #a0cd98;
+}
+
+.section-aboutPage-video {
+  width: 100%;
+
+  position: relative;
+
+  padding-bottom: 3rem;
+}
+
+.section-aboutPage-frame-box {
+  width: 56%;
+
+  margin: auto;
+
+  aspect-ratio: 560/315;
+
+  background-color: #eef6ec;
+
+  transform: translateX(10%);
+}
+
+.section-aboutPage-frame-box iframe {
+  vertical-align: top;
+
+  width: 100%;
+
+  height: 100%;
+
+  transform: translateX(-15%) translateY(-15%);
+}
+
+.circle-50pic {
+  width: 20.15625%;
+
+  position: absolute;
+
+  left: -5%;
+
+  top: 35%;
+}
+
+.circle-50pic img {
+  width: 100%;
+
+  vertical-align: middle;
+}
+
+.mid-article {
+  width: 80%;
+
+  margin: auto;
+
+  padding-bottom: 6%;
+}
+
+.mid-article p {
+  font-size: 1.036269vw;
+
+  color: #21578a;
+
+  margin-bottom: 2.2em;
+
+  line-height: 1.8;
+}
+
+.section-import-record {
+  width: 100%;
+
+  /* padding-bottom: 10.416666%; */
+}
+
+.company-philosophy h3,
+.section-import-record h3 {
+  font-size: 3.626943vw;
+
+  text-align: center;
+
+  color: #70ace5;
+
+  font-family: "Audiowide", cursive;
+
+  margin-bottom: 1.3em;
+}
+
+.section-record-pic {
+  width: 60%;
+
+  margin: auto;
+}
+
+.section-record-pic img {
+  width: 100%;
+}
+
+.company-philosophy {
+  width: 100%;
+
+  background-image: url(../../src/web/about/pic_1.png);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  padding-bottom: 500px;
+
+  transform: translateY(20%);
+}
+
+.company-philosophy-card-list {
+  width: 60%;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+
+  margin-bottom: 5em;
+}
+
+.company-philosophy-card-item {
+  width: 16%;
+}
+
+.company-philosophy-card-item p {
+  font-size: 20px;
+
+  margin-top: 0.8em;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.company-philosophy-card-pic {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.company-philosophy-card-pic::after {
+  content: "";
+
+  width: 120%;
+
+  height: 3px;
+
+  background-color: black;
+
+  margin-top: 1.5em;
+}
+
+.company-philosophy-card-pic img {
+  width: 100%;
+
+  vertical-align: top;
+}
+
+.company-philosophy-card-txt {
+  width: 60%;
+
+  margin: auto;
+}
+
+.company-philosophy-card-txt h4 {
+  font-size: 70px;
+
+  font-weight: 600;
+
+  color: #21578a;
+
+  margin-bottom: 0.6em;
+}
+
+.company-philosophy-card-txt h4 span {
+  font-size: 30px;
+
+  margin-left: 0.6em;
+}
+
+.company-philosophy-card-txt ul li,
+.company-philosophy-card-txt p {
+  font-size: 20px;
+
+  margin-bottom: 2em;
+
+  color: #21578a;
+
+  font-weight: 400;
+}
+
+.company-philosophy-card-txt ul li {
+  margin-bottom: 0.6em;
+
+  list-style-type: disc;
+}
+
+@media (1200px>width) {
+  .section-aboutPage-video h3 {
+    font-size: 55px;
+  }
+}
+
+@media (768px>width) {
+  .section-aboutPage-item p {
+    font-size: 20px;
+  }
+  .mid-article p {
+    font-size: 20px;
+  }
+  .bread-list-home {
+    width: 14px;
+  }
+
+  .bread-list-main {
+    gap: 5px;
+
+    margin-right: 0;
+  }
+
+  .bread-list {
+    padding: 0 8.695652%;
+  }
+
+  .section-aboutPage-item h2 {
+    font-size: 40px;
+
+    margin-top: 2em;
+  }
+
+  .section-aboutPage-item h3 {
+    font-size: 25px;
+  }
+
+  .bread-list-main li p {
+    font-size: 12px;
+  }
+
+  .section-aboutPage-main {
+    width: 84%;
+  }
+
+  .section-aboutPage-pic {
+    width: 100%;
+  }
+
+  .section-aboutPage-video h3 {
+    font-size: 40px;
+
+    text-align: center;
+
+    margin-bottom: 1em;
+  }
+
+  .section-aboutPage-frame-box {
+    width: 70%;
+  }
+
+  .section-import-record h3 {
+    font-size: 40px;
+
+    margin-bottom: 1em;
+  }
+
+  .section-record-pic {
+    width: 90%;
+  }
+
+  .company-philosophy {
+    padding-top: 85px;
+
+    padding-bottom: 167px;
+
+    transform: translateY(3%);
+
+    background-image: url(../phone/about/bg.png);
+
+    background-size: auto;
+
+    background-position: bottom;
+  }
+
+  .company-philosophy h3 {
+    font-size: 40px;
+  }
+
+  .company-philosophy-card-list {
+    width: 77%;
+  }
+
+  .company-philosophy-card-item {
+    width: 60%;
+
+    margin-bottom: 20px;
+  }
+
+  .company-philosophy-card-item p {
+    font-size: 20px;
+  }
+
+  .company-philosophy-card-txt h4 {
+    font-size: 25px;
+  }
+
+  .company-philosophy-card-txt {
+    width: 80%;
+  }
+
+  .company-philosophy-card-txt ul li,
+  .company-philosophy-card-txt p {
+    line-height: 1.6;
+  }
+
+  .company-philosophy-card-txt h4 span {
+    font-size: 20px;
+  }
+
+  .since-list {
+    width: 80%;
+
+    margin: auto;
+  }
+
+  /* SINCE-BORDER */
+
+  .since-item-title {
+    border-left: 2px solid #28a6bf;
+
+    height: fit-content;
+  }
+
+  .since-item-title h3 {
+    font-size: 50px;
+
+    text-indent: 0.25em;
+
+    color: #28a6bf;
+
+    font-family: "Philosopher", sans-serif;
+
+    margin-bottom: 15px;
+
+    text-align: start;
+
+    position: relative;
+  }
+
+  .since-item-title h3::after {
+    content: "";
+
+    display: block;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #28a6bf;
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    transform: translateX(-69%);
+  }
+
+  .since-item-title h3::before {
+    content: "";
+
+    display: block;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #28a6bf;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    transform: translateX(-69%);
+  }
+
+  .since-list.since-list p {
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 0.5em;
+  }
+
+  .since-item-title-y {
+    color: #ffd887;
+
+    border-left: 2px solid #ffd887;
+  }
+
+  .since-item-title-y h3 {
+    color: #ffd887;
+  }
+
+  .since-item-title-y h3::before,
+  .since-item-title-y h3::after {
+    background-color: #ffd887;
+  }
+}
